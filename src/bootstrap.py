@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="PNH-registry",
+        title="FastAPI template",
         lifespan=lifespan,
     )
     app = apply_middleware(app)
